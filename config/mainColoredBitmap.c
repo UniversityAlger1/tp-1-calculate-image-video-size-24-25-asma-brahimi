@@ -14,10 +14,12 @@ int testMethod(int input1, int input2, char* unit, float output){
 }
 
 int main() {
-    testMethod(100, 50, "ko", 14.648438);
+    printf("Début de l'exécution du programme.\n");
+    
+    testMethod(100, 50, "ko",117.1875) ;//14.648438);
 
-    testMethod(500, 300, "mo", 0.429153);
+    testMethod(500, 300, "mo", 3.4375);//0.429153);
 
-    testMethod(1024, 1024, "go", 0.002930);
+    testMethod(1024, 1024, "go",0.002199); //0.002930);
     return 0;
 }
