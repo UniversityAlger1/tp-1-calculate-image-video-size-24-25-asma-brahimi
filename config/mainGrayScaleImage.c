@@ -14,10 +14,10 @@ int testMethod(int input1, int input2, float output){
 }
 
 int main() {
-    // Test 1
+    //  Test 1
     testMethod(2, 2, 4);
 
-    // Test 1
+    //  Test 1
     testMethod(20, 6, 120);
     return 0;
 }
