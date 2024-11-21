@@ -10,7 +10,7 @@
 float coloredBitmap(int w, int h, char* unit) {
    // YOUR CODE HERE - BEGIN
       // Taille de l'image en bits
-    long long imageSizeInBits = w * h * 24; // 24 bits par pixel pour une image couleur (8 bits par composant RGB)
+    long long imageSizeInBits = w * h * 3; // 24 bits par pixel pour une image couleur (8 bits par composant RGB)
 
     // Si l'unité demandée est "bt" (bits)
     if (strcmp(unit, "bt") == 0) {
