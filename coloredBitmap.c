@@ -22,11 +22,11 @@ float coloredBitmap(int w, int h, char* unit) {
 
     // Si l'unité demandée est "mo" (megabits)
     } else if (strcmp(unit, "mo") == 0) {
-        return (imageSizeInBits / 1024.0) / 1024.0;  // Conversion en megabits (1 megabit = 1024 kilobits)
+        return (imageSizeInBits / (1024.0 * 1024.0));  // Conversion en megabits (1 megabit = 1024 kilobits)
 
    // Si l'unité demandée est "go" (gigabits)
     } else if (strcmp(unit, "go") == 0) {
-        return ((imageSizeInBits / 1024.0) / 1024.0) / 1024.0;  // Conversion en gigabits (1 gigabit = 1024 megabits)
+        return (imageSizeInBits / (1024.0 * 1024.0 * 1024.0));  // Conversion en gigabits (1 gigabit = 1024 megabits)
     
     // Si l'unité est incorrecte, retourner -1 pour indiquer une erreur
     } else {
